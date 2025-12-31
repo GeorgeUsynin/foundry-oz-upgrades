@@ -1,0 +1,19 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["node_modules", "lib"]
+build_info = true
+extra_output = ["storageLayout"]
+fs_permissions = [{ access = "read", path = "./broadcast" }, { access = "read", path = "./out" },]
+ffi = true
+ast = true
+
+
+[etherscan]
+sepolia = { key = "${ETHERSCAN_API_KEY}" }
+
+[rpc_endpoints]
+anvil = "http://127.0.0.1:8545"
+sepolia = "${SEPOLIA_RPC_URL}"
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
