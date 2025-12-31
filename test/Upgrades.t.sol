@@ -2,7 +2,7 @@
 pragma solidity ^0.8.33;
 
 import {Test, console} from "forge-std/Test.sol";
-import {Upgrades} from "@openzeppelin-foundry-upgrades/Upgrades.sol";
+import {Upgrades} from "openzeppelin-foundry-upgrades/Upgrades.sol";
 import {ContractA} from "../src/ContractA.sol";
 import {ContractB} from "../src/ContractB.sol";
 import {IBeacon} from "@openzeppelin/contracts/proxy/beacon/IBeacon.sol";

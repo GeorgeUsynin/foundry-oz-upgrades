@@ -5,7 +5,7 @@ import {Script} from "forge-std/Script.sol";
 
 import {ContractA} from "../src/ContractA.sol";
 import {ContractB} from "../src/ContractB.sol";
-import {Options, Upgrades} from "@openzeppelin-foundry-upgrades/Upgrades.sol";
+import {Options, Upgrades} from "openzeppelin-foundry-upgrades/Upgrades.sol";
 import {DevOpsTools} from "foundry-devops/src/DevOpsTools.sol";
 
 contract UpgradesScript is Script {
